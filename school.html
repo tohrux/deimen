@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.color.js"></script>
+    <title>金毛儿儿</title>
+    <style>
+        .red {
+            background-color: rgb(254, 0, 0);
+        }
+
+        .black {
+            background: black;
+        }
+
+
+        #btnJmee {
+            color: aliceblue;
+        }
+
+        #btnJmee::first-letter {
+            color: black;
+            background-color: white;
+        }
+
+        #btnJmee:hover:first-letter {
+            color: white;
+            background-color: black;
+        }
+
+
+        #btnJmee:hover {
+            color: black;
+            background-color: white;
+        }
+
+        header>nav>a::first-letter {
+            font-size: 35px;
+            background-color: black;
+        }
+
+        #headerA1 {
+            font-size: 22px;
+            white-space: nowrap;
+        }
+
+        #headerA1:first-letter {
+            font-size: 33px;
+        }
+
+        #headerA2 {
+            font-size: 22px;
+            color: black;
+            background: white;
+            white-space: nowrap;
+
+        }
+
+        #headerA2:hover {
+            color: white;
+            background: black;
+        }
+
+        #headerA2:hover {
+            color: white;
+            background: black;
+        }
+
+        #span2 {
+            font-size: 33px;
+        }
+
+        button {
+            white-space: nowrap;
+        }
+
+        main {
+            /* background: white; */
+        }
+
+        #mainDiv {
+            height: 200px;
+            width: 200px;
+            background-color: black;
+        }
+
+        #mainBg {
+            /* height: 500px; */
+            background: black no-repeat;
+            position: relative;
+        }
+
+        #mainBg1 {
+            /* height: 400px; */
+            background: white no-repeat;
+        }
+
+        #mainBg2 {
+            /* height: 400px; */
+            /* background: red no-repeat; */
+        }
+
+        #audio {
+            width: 110px;
+            margin-right: 20px;
+            position: fixed;
+            bottom: 10px;
+            right: 0;
+            /* float: left; */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark black fixed-top" id="nav">
+            <a class="navbar-brand" href="index.html">毕 业留念册</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
+                aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="school.html" id="headerA1"><span id="span1">「sch </span><span
+                                style="color: black;background-color: aliceblue;font-weight: 600;">oo</span> l
+                            </span></span><span id="span2">」</span></a>
+                    </li>
+                    <li class="nav-item mt-2 ml-4" id="li1">
+                        <a class="nav-link" href="zp.html" id="headerA2"><span>个人作品集</span><span></span></a>
+                    </li>
+                </ul>
+
+                <a id="btnJmee" class="btn btn-lg black mt-1"
+                    href="https://www.weibo.com/u/1879623707?topnav=1&wvr=6&topsug=1&is_hot=1"
+                    target="_blank">@<span>金毛儿儿</span></a>
+
+            </div>
+        </nav>
+        <div id="headerLast"></div>
+    </header>
+    <div class=" container mt-5">
+        <div class=" row">
+            <div class=" col-4">
+                <img src="img/logo.jpg" class=" img-thumbnail" alt="">
+            </div>
+            <div class="col-7">
+                <h1>广东理工职业学院</h1>
+                <div>Guangdong Polytechnic institute</div>
+                <div>广东理工职业学院（Guangdong Polytechnic
+                    Institute），创立于2005年，坐落于广东省中山市，是一所以工科为主的全日制普通高等学校。第二批国家现代学徒制试点单位。分校区位于广东省佛山市南海区桂城街道。
+                    截至2018年12月，学校在中山市五桂山、广州市越秀区、佛山市南海区设立三个校区。占地1001.4亩；设有12个二级教学单位，开办36个专科专业。有全日制在校生11703人。</div>
+                <div class=" my-3"><b>创办时间</b> 2005年</div>
+                <span>
+                    <b>学校官网</b> <a href="http://www.gdpi.edu.cn ">http://www.gdpi.edu.cn </a></span>
+            </div>
+
+        </div>
+        <span></span>
+    </div>
+    <footer>
+        <div style="height: 50px;line-height: 50px;" class=" bg-white text-center">金毛儿儿©2019</div>
+        <audio clss=" mt-2" id="audio" src="mp3/Lyn - Beneath the Mask.mp3" controls></audio>
+    </footer>
+</body>
+
+<script>
+    // $('#headerLast').height() = $("#nav").outerheight();
+    $('#headerLast').css("height", $("#nav").outerHeight());
+    $(window).resize(function () {
+        $('#headerLast').css("height", $("#nav").outerHeight());
+    })
+    // "个人作品集" 
+    $('#li1').mouseenter(function () {
+        $('#nav').stop();
+        $('#nav').animate({
+            backgroundColor: "black",
+        }) // alert(123);
+    })
+    $('#li1').mouseleave(function () {
+        $('#nav').stop();
+        $('#nav').animate({
+            backgroundColor: "red",
+        }) // alert(123);
+    })
+    // $('.navbar-toggler-icon').click(function () {
+    //     if ($("#nav").outerHeight()<80) {
+    //         console.log(123);
+    //     }
+    //     $('#headerLast').css("height", $("#nav").outerHeight());
+    //     console.log($("#nav").outerHeight());
+    // })
+</script>
+
+</html>
