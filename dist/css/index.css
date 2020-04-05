@@ -1,0 +1,60 @@
+    .myheader {
+        background: url(../ark/bg.jpg) no-repeat center center;
+        /* background-size: myheader */
+        /* padding-top: 20rem; */
+        padding-bottom: 5rem;
+    }
+
+    #banner_logo {
+        width: 3rem;
+    }
+
+    #title_btn {
+        font-size: 30px;
+    }
+
+    #login_btn {
+        font-weight: 800;
+    }
+
+    header {
+        height: 675px;
+    }
+
+    #first_nav {
+        margin-bottom: 270px;
+    }
+
+    .color2 {
+        background-color: rgba(255, 255, 255, 0.822);
+    }
+
+    header>h1 {
+        line-height: 80px;
+    }
+
+    #table1 tr>td>img {
+        width: 64px;
+    }
+
+    #table1 tr>td,
+    #table1 tr>th {
+        vertical-align: middle;
+    }
+
+    .nav_color {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    a,
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a {
+        color: aliceblue;
+    }
